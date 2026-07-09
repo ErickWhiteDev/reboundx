@@ -159,6 +159,8 @@ void rebx_register_default_params(struct rebx_extras* rebx){
     rebx_register_param(rebx, "td_disruption_flag", REBX_TYPE_INT);
     rebx_register_param(rebx, "mch_tmp_vel", REBX_TYPE_VEC3D);
     rebx_register_param(rebx, "mch_tmp_ang_vel", REBX_TYPE_VEC3D);
+    rebx_register_param(rebx, "mch_coef_rest", REBX_TYPE_DOUBLE);
+    rebx_register_param(rebx, "mch_coef_fric", REBX_TYPE_DOUBLE);
 }
 
 void rebx_register_param(struct rebx_extras* const rebx, const char* name, enum rebx_param_type type){
